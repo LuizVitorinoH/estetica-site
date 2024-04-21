@@ -17,7 +17,7 @@ function InstagramFeed() {
   useEffect(() => {
     const fetchInstagramPosts = async () => {
       const accessToken =
-        "IGQWRQMjFYdW8xM1RiWTkzdEJ4TFFpd3A1X3V0eExsNnNyZAUlhMWFRMGs2eEVQd0t4VnlUeEFmUThTcXFtUzROT254QTV1NG02TmpiRWppX3ZAPTkJGVC1aUmN4azhKcFFBYVlBZAVNORlhZATHY5NGFpLUE5VUFpV28ZD"; // Substitua por seu token de acesso real
+        "IGQWRORkN3VDZAKc042TXROTVg4MGZABUm16clhkbFEtU1FvU2I1X0daRlJ6Wm15cEhGaFlRVV96bjZAzQ0d2cEltNWozSGRnaWxObGVsOGUtUW5Ld2M2VmVaV1REdmtFVElxeFgzUlkyWGlaUE5fUmZAmc1JiU3BCeEUZD"; // Substitua por seu token de acesso real
       let postsArray = [];
       let url = `https://graph.instagram.com/me/media?fields=id,media_type,media_url,permalink,caption&access_token=${accessToken}`;
 
