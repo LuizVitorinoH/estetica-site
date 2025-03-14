@@ -46,7 +46,7 @@ function LocationSection() {
                   style={{
                     width: "100%",
                     height: "auto",
-                    maxHeight: isMobile ? "50vh" : "75vh",
+                    maxHeight: isMobile ? "50vh" : "49vh",
                     objectFit: "cover",
                   }}
                 />
@@ -54,8 +54,8 @@ function LocationSection() {
             ))}
           </Slider>
         </Grid>
-        <Grid item xs={12} md={6}>
-          <Paper elevation={4} sx={{ height: isMobile ? "50vh" : "75vh" }}>
+        <Grid item xs={12} md={6} mt={4}>
+          <Paper elevation={4} sx={{ height: isMobile ? "50vh" : "49vh" }}>
             <iframe
               src={mapSrc}
               width="100%"
