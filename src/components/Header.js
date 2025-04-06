@@ -53,8 +53,8 @@ function Header(props) {
 
   const menuOptions = [
     { name: "Nossos Serviços", sectionId: "services" },
-    { name: "Últimas Postagens", sectionId: "instagram" },
     { name: "Agende sua Avaliação", sectionId: "evaluation" },
+    { name: "Nossas Redes Sociais", sectionId: "socialmedia" },
     { name: "Nossa Localização", sectionId: "location" },
   ];
 
@@ -96,7 +96,7 @@ function Header(props) {
               <IconButton
                 color="inherit"
                 aria-label="menu"
-                sx={{ ml: "auto" }} // Empurra o ícone para a direita
+                sx={{ ml: "auto" }}
                 onClick={handleMenu}
               >
                 <MenuIcon />

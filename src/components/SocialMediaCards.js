@@ -7,9 +7,7 @@ import {
   CardActionArea,
   CardContent,
 } from "@mui/material";
-import InstagramIcon from "@mui/icons-material/Instagram";
-import FacebookIcon from "@mui/icons-material/Facebook";
-import LinkIcon from "@mui/icons-material/Link"; // Para representar o Linktree
+
 
 function SocialMediaCards() {
   const socialMedia = [
@@ -17,26 +15,26 @@ function SocialMediaCards() {
       name: "Instagram",
       description: "Acompanhe nossas postagens e novidades no Instagram.",
       icon: "./instagram.png",
-      link: "https://www.instagram.com/esteticamilenasindeaux", // Coloque o seu link aqui
+      link: "https://www.instagram.com/esteticamilenasindeaux",
     },
     {
       name: "Facebook",
       description: "Curta nossa página no Facebook e fique por dentro.",
       icon: "./facebook.png",      
-      link: "https://www.facebook.com/esteticamilenasindeaux", // Coloque o seu link aqui
+      link: "https://www.facebook.com/esteticamilenasindeaux", 
     },
     {
       name: "Linktree",
       description: "Acesse todos os nossos links através do Linktree.",
       icon: "./linktr.png",      
-      link: "https://linktr.ee/esteticamilenasindeaux", // Coloque o seu link aqui
+      link: "https://linktr.ee/esteticamilenasindeaux",
     },
   ];
 
   return (
     <Container id="socialmedia" sx={{ paddingBottom: 4, paddingTop: 8}}>
       {/* <Typography variant="h4" gutterBottom>
-        Últimas Postagens
+       
       </Typography> */}
 
       <Grid container spacing={2}>

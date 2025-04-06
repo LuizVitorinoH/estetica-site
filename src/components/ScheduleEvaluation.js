@@ -12,12 +12,10 @@ function ScheduleEvaluation() {
   const handleSubmit = (e) => {
     e.preventDefault();
     const whatsAppMessage = encodeMessage(name, message);
-    const phoneNumber = "5511948155914"; // Substitua pelo número do WhatsApp da estética
+    const phoneNumber = "5511948155914";
 
-    // Verifica se o dispositivo é móvel
     const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 
-    // Constrói a URL do WhatsApp de acordo com o dispositivo
     const whatsAppURL = isMobile
       ? `whatsapp://send?phone=${phoneNumber}&text=${whatsAppMessage}`
       : `https://web.whatsapp.com/send?phone=${phoneNumber}&text=${whatsAppMessage}`;
@@ -26,7 +24,7 @@ function ScheduleEvaluation() {
   };
 
   return (
-    <Container maxWidth="sm" id="evaluation" sx={{ mt: 4 }}>
+    <Container maxWidth="sm" id="evaluation">
       <Typography variant="h4" component="h1" gutterBottom>
         Agende sua avaliação
       </Typography>

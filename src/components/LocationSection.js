@@ -11,8 +11,8 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-const foto1 = "/foto1.png";
-const foto2 = "/foto2.png";
+const foto1 = "/foto1.jpg";
+const foto2 = "/foto2.jpg";
 
 const settings = {
   dots: true,
@@ -54,7 +54,7 @@ function LocationSection() {
             ))}
           </Slider>
         </Grid>
-        <Grid item xs={12} md={6} mt={4}>
+        <Grid item xs={12} md={6} mt={isMobile ? 2 : 0}>
           <Paper elevation={4} sx={{ height: isMobile ? "50vh" : "49vh" }}>
             <iframe
               src={mapSrc}
